@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E9C3614D29F8002200461B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3614C29F8002200461B67 /* AppDelegate.swift */; };
-		E9C3614F29F8002200461B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3614E29F8002200461B67 /* ViewController.swift */; };
 		E9C3615129F8002300461B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3615029F8002300461B67 /* Assets.xcassets */; };
 		E9C3615429F8002300461B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C3615229F8002300461B67 /* Main.storyboard */; };
+		E9C3615C29F8067900461B67 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3615B29F8067900461B67 /* Preferences.swift */; };
+		E9C3615E29F806B500461B67 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3615D29F806B500461B67 /* UserDefaults.swift */; };
+		E9C3616029F8075C00461B67 /* Bool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3615F29F8075C00461B67 /* Bool+Extension.swift */; };
+		E9C3616229F8077900461B67 /* NSMenu+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3616129F8077900461B67 /* NSMenu+Extension.swift */; };
+		E9C3616429F809D300461B67 /* DockIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3616329F809D300461B67 /* DockIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9C3614929F8002200461B67 /* Timers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C3614C29F8002200461B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9C3614E29F8002200461B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9C3615029F8002300461B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C3615329F8002300461B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9C3615529F8002300461B67 /* Timers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timers.entitlements; sourceTree = "<group>"; };
+		E9C3615B29F8067900461B67 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		E9C3615D29F806B500461B67 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		E9C3615F29F8075C00461B67 /* Bool+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Extension.swift"; sourceTree = "<group>"; };
+		E9C3616129F8077900461B67 /* NSMenu+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenu+Extension.swift"; sourceTree = "<group>"; };
+		E9C3616329F809D300461B67 /* DockIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				E9C3614C29F8002200461B67 /* AppDelegate.swift */,
-				E9C3614E29F8002200461B67 /* ViewController.swift */,
 				E9C3615029F8002300461B67 /* Assets.xcassets */,
 				E9C3615229F8002300461B67 /* Main.storyboard */,
 				E9C3615529F8002300461B67 /* Timers.entitlements */,
+				E9C3615B29F8067900461B67 /* Preferences.swift */,
+				E9C3615D29F806B500461B67 /* UserDefaults.swift */,
+				E9C3615F29F8075C00461B67 /* Bool+Extension.swift */,
+				E9C3616129F8077900461B67 /* NSMenu+Extension.swift */,
+				E9C3616329F809D300461B67 /* DockIcon.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -131,8 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C3614F29F8002200461B67 /* ViewController.swift in Sources */,
+				E9C3615C29F8067900461B67 /* Preferences.swift in Sources */,
 				E9C3614D29F8002200461B67 /* AppDelegate.swift in Sources */,
+				E9C3615E29F806B500461B67 /* UserDefaults.swift in Sources */,
+				E9C3616029F8075C00461B67 /* Bool+Extension.swift in Sources */,
+				E9C3616229F8077900461B67 /* NSMenu+Extension.swift in Sources */,
+				E9C3616429F809D300461B67 /* DockIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ struct DockIcon {
         }
         
         set {
-            setVisibility(isVisible)
+            setVisibility(newValue)
         }
     }
     

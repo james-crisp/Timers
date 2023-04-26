@@ -101,7 +101,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 keyEquivalent: ""
             )
             
-            item.tag = 3
+            item.tag = 4
             item.target = self
             item.state = Preferences.showTimer.stateValue
             
@@ -138,6 +138,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             .separator(),
             
             toggleSecondsItem,
+            toggleTimerItem,
             
             .separator(),
             

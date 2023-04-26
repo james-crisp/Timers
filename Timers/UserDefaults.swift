@@ -12,6 +12,7 @@ extension UserDefaults {
         case useFlashDots = "useFlashDots"
         case showSeconds = "showSeconds"
         case showDockIcon = "showDockIcon"
+        case showTimer = "showTimer"
         case firstRunGone = "firstRunGone"
     }
     

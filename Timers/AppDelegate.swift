@@ -94,6 +94,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return item
         }()
         
+        let toggleTimerItem: NSMenuItem = {
+            let item = NSMenuItem(
+                title: "Timer1",
+                action: #selector(toggleTimer),
+                keyEquivalent: ""
+            )
+            
+            item.tag = 3
+            item.target = self
+            item.state = Preferences.showTimer.stateValue
+            
+            return item
+        }()
+        
         let quitApplicationItem: NSMenuItem = {
             let item = NSMenuItem(title: "Quit", action: #selector(terminate), keyEquivalent: "q")
             item.target = self
@@ -185,6 +199,16 @@ extension AppDelegate {
         if let menu = statusBarItem.menu, let item = menu.item(withTag: 3) {
             item.title = "Show seconds"
             item.state = Preferences.showSeconds.stateValue
+        }
+    }
+    
+    @objc
+    func toggleTimer(_ sender: NSMenuItem) {
+        Preferences.showTimer = !Preferences.showTimer
+        
+        if let menu = statusBarItem.menu, let item = menu.item(withTag: 3) {
+            item.title = "Show Timer"
+            item.state = Preferences.showTimer.stateValue
         }
     }
     

@@ -15,4 +15,14 @@ class NewReminderVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func titleField(_ sender: NSTextField) {
+    }
+    @IBAction func descriptionField(_ sender: NSTextField) {
+    }
+    @IBAction func dateField(_ sender: NSDatePicker) {
+    }
+    
+    @IBAction func submitButton(_ sender: NSButton) {
+    }
+    
 }

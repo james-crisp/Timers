@@ -43,6 +43,17 @@ struct Preferences {
         }
     }
     
+    static var showTimer: Bool {
+        get {
+            return defaults.bool(forKey: .showTimer)
+        }
+        
+        set {
+            defaults.set(newValue, forKey: .showTimer)
+            defaults.synchronize()
+        }
+    }
+    
     static var firstRunGone: Bool {
         get {
             return defaults.bool(forKey: .firstRunGone)

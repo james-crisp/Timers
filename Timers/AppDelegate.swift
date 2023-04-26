@@ -11,6 +11,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var timer: Timer? = nil
+    var reminders: [Reminder] = []
     
     func applicationWillFinishLaunching(_ notification: Notification) {
        if Preferences.firstRunGone == false {
@@ -97,6 +98,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let item = NSMenuItem(title: "Quit", action: #selector(terminate), keyEquivalent: "q")
             item.target = self
             
+            return item
+        }()
+        
+        
+        let remindersItem: NSMenuItem = {
+            let item = NSMenuItem(title: "Reminders", action: nil, keyEquivalent: "")
+            item.tag = 5
+
+            let menu = NSMenu()
+
+            for reminder in self.reminders {
+                menu.addItem(.init(title: reminder.title, action: nil, keyEquivalent: ""))
+            }
+
+            item.isEnabled = reminders.count > 0
+
             return item
         }()
         

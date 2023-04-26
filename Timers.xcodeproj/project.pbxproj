@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9AB6AC729F97116000E9AAE /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AB6AC629F97116000E9AAE /* Reminder.swift */; };
+		E9AB6AC929F97DC7000E9AAE /* NewReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AB6AC829F97DC7000E9AAE /* NewReminderVC.swift */; };
 		E9C3614D29F8002200461B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3614C29F8002200461B67 /* AppDelegate.swift */; };
 		E9C3615129F8002300461B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3615029F8002300461B67 /* Assets.xcassets */; };
 		E9C3615429F8002300461B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C3615229F8002300461B67 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		E9AB6AC629F97116000E9AAE /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		E9AB6AC829F97DC7000E9AAE /* NewReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderVC.swift; sourceTree = "<group>"; };
 		E9C3614929F8002200461B67 /* Timers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C3614C29F8002200461B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C3615029F8002300461B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				E9C3616129F8077900461B67 /* NSMenu+Extension.swift */,
 				E9C3616329F809D300461B67 /* DockIcon.swift */,
 				E9AB6AC629F97116000E9AAE /* Reminder.swift */,
+				E9AB6AC829F97DC7000E9AAE /* NewReminderVC.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				E9C3616029F8075C00461B67 /* Bool+Extension.swift in Sources */,
 				E9C3616229F8077900461B67 /* NSMenu+Extension.swift in Sources */,
 				E9C3616429F809D300461B67 /* DockIcon.swift in Sources */,
+				E9AB6AC929F97DC7000E9AAE /* NewReminderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
